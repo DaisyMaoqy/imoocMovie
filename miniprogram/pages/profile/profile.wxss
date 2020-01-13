@@ -1,0 +1,32 @@
+/* pages/profile/profile.wxss */
+
+.dao_dor {
+  width: 100%;
+  height: 300rpx;
+  margin: 0 auto;
+  background-size: cover;
+  filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+.avata_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+}
+
+.avata {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin: 50rpx auto;
+  overflow: hidden;
+  display: block;
+}
+
+.nickName {
+  text-align: center;
+  color: #333;
+}

@@ -1,0 +1,27 @@
+<!--pages/movie/movie.wxml-->
+<view wx:for="{{movieList}}" wx:key="index">
+<!-- {{item}} -->
+<!-- num="2" -->
+  <van-card    
+    tag="{{ item.rating.average }}"
+    desc="{{item.mainland_pubdate}}"
+    title="{{ item.title }}"    
+    lazy-load="true"
+  >
+    <view slot="thumb" class="item_thumb">
+      <image src="{{ item.images.small }}"></image>
+    </view>
+    <view slot="tags"  class="item_tag">
+      时长：<text>{{item.durations[0]}} </text>
+    </view>
+    <view slot="tags" wx:for="{{item.genres}}" wx:key='index' class="item_tag item_genres">
+      {{item}}
+    </view>    
+    <view slot="tags"  class="item_tag">
+      主演：<text wx:for="{{item.casts}}" wx:key='index'>{{item.name}} </text>
+    </view>
+    <view slot="footer">
+      <van-button size="mini" type="danger" data-movieId="{{item.id}}" bindtap="goToEvaluate">评价</van-button>
+    </view>
+  </van-card>
+</view>

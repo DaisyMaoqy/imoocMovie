@@ -1,0 +1,45 @@
+/* pages/myEvaluation/myEvaluation.wxss */
+.view-item{
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.view-item-title{
+  padding: 20rpx 0 0 20rpx;
+  display: inline-block;
+  width: 95%;
+}
+
+.view-item-rate{
+  padding: 10rpx 20rpx;
+  display: inline-block;
+}
+
+.detail-img {
+  width: 250rpx;
+  height: 90%;
+  margin-right: 24rpx;
+}
+
+.detail-info {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 250rpx;
+  padding: 20rpx;
+}
+
+.detail {
+  flex-grow: 1;
+  line-height: 50rpx;
+}
+
+.detail view {
+  font-size: 24rpx;
+}
+
+.detail .detail-nm {
+  font-size: 40rpx;
+  font-weight: 700;
+}

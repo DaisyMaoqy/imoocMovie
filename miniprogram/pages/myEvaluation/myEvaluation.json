@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-rate": "@vant/weapp/rate",
+    "van-grid": "@vant/weapp/grid",
+    "van-grid-item": "@vant/weapp/grid-item",
+    "van-cell": "@vant/weapp/cell",
+    "van-cell-group": "@vant/weapp/cell-group",
+    "van-image": "@vant/weapp/image",
+    "van-collapse": "@vant/weapp/collapse",
+    "van-collapse-item": "@vant/weapp/collapse-item"
+  },
+  "navigationBarTitleText": "我的评价"
+}

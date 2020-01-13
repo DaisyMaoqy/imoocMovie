@@ -1,0 +1,43 @@
+<view>  
+  <view wx:for="{{ evaluationList }}" wx:key="index">
+    <view class="view-item">
+      <span class="view-item-title">
+        <b>{{ item.movieTitle }}</b>        
+      </span>
+      <view class='detail-info' wx:if="{{item.movieTitle != undefined}}">
+        <image src="{{ item.images }}" class='detail-img' mode="aspectFit"></image>
+        <view class='detail'>
+          <view class='detail-nm'>{{ item.title }}</view>
+          <view>{{ item.original_title }}</view>
+          <view>{{ item.countries }}</view>
+          <view>导演：{{ item.directors }}</view>
+        </view>
+      </view>
+      <view wx:else></view>
+      <!-- 评价内容 -->
+      <van-cell-group>
+        <van-cell title="{{ item.content }}" value="" label="" border="{{ false }}" />      
+      </van-cell-group>
+      <div class="view-item-rate">我的评分：<van-rate value="{{ item.score }}" readonly /> {{ item.score }}分</div>
+      <!-- 折叠面板 -->
+      <view wx:if="{{ item.imgList.length == 0 }}"></view>
+      <view wx:else>
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+          <van-collapse-item title="我的上传" name="{{ item._id }}">
+            <van-grid column-num="3" border="{{ false }}">
+              <van-grid-item use-slot wx:for="{{ item.imgList }}"  wx:key="index">
+                <image
+                  style="width: 100%; height: 90px;"  mode="aspectFit"
+                  src="{{ item.url }}"
+                />
+              </van-grid-item>
+            </van-grid>
+          </van-collapse-item>
+        </van-collapse>
+      </view>
+      
+    </view>    
+
+  </view>      
+  
+</view>

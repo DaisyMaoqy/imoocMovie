@@ -1,0 +1,36 @@
+/* pages/movie/movie.wxss */
+
+page{
+  background: #f0f2f5;
+}
+
+.van-card{
+  margin-bottom: 5rpx;
+}
+
+.van-card__title{
+  font-size: 32rpx;
+}
+
+.item_tag{
+  padding: 7rpx 0;
+}
+
+.item_genres{  
+  display: inline-block;
+  background: #f00;
+  color: #fff;
+  border-radius: 8rpx;
+  padding: 2rpx 10rpx;
+  margin-right: 5rpx;
+}
+
+.item_thumb{
+  width: 184rpx;
+  height: 250rpx;
+}
+
+.item_thumb image{
+  width: 100%;
+  height: 100%;
+}
