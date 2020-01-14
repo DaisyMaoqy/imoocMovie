@@ -1,4 +1,4 @@
-# imoocMovie 
+# imoocMovie (Vant-weappk框架)
 
 获取最近电影资讯，记录个人评价信息，结合云开发，记录我的评价
 
